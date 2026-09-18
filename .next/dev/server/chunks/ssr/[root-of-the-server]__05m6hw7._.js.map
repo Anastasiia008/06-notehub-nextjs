@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///Users/anastasiia_008/06-notehub-nextjs/components/TanStackProvider/TanStackProvider.tsx"],"sourcesContent":["\"use client\";\n\nimport { QueryClient, QueryClientProvider } from \"@tanstack/react-query\";\nimport { useState, type ReactNode } from \"react\";\n\nexport default function TanStackProvider({ children }: { children: ReactNode }) {\n  const [queryClient] = useState(\n    () =>\n      new QueryClient({\n        defaultOptions: {\n          queries: {\n            staleTime: 60 * 1000,\n          },\n        },\n      })\n  );\n\n  return (\n    <QueryClientProvider client={queryClient}>\n      {children}\n    </QueryClientProvider>\n  );\n}"],"names":["TanStackProvider","children","queryClient","defaultOptions","queries","staleTime","client"],"mappings":";;;;;AAEA;AAAA;AACA;AAHA;;;;AAKe,SAASA,iBAAiB,EAAEC,QAAQ,EAA2B;IAC5E,MAAM,CAACC,YAAY,GAAG,IAAA,iNAAQ,EAC5B,IACE,IAAI,4LAAW,CAAC;YACdC,gBAAgB;gBACdC,SAAS;oBACPC,WAAW,KAAK;gBAClB;YACF;QACF;IAGJ,qBACE,8OAAC,6MAAmB;QAACC,QAAQJ;kBAC1BD;;;;;;AAGP"}}]
+}

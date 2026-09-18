@@ -1,0 +1,33 @@
+/* [project]/app/notes/Notes.module.css [app-client] (css) */
+.Notes-module__8V41mW__app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.Notes-module__8V41mW__toolbar {
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.Notes-module__8V41mW__button {
+  color: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: #0070f3;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color .2s;
+}
+
+.Notes-module__8V41mW__button:hover {
+  background-color: #0051a2;
+}
+
+/*# sourceMappingURL=app_notes_Notes_module_css_1igg3k2._.single.css.map*/
